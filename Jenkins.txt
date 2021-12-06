@@ -1,7 +1,17 @@
 pipeline {
     agent any
     stages {
-	    stage('Clone'){
+	    stage('Clean Start'){
+        	steps{
+            		script{
+                        	try
+                        	{
+                           		bat("rd C:\\spring-petclinic /s /q")
+                        	}catch(Exception e){}
+                	 }
+        	   }
+	    }
+            stage('Clone'){
 	        steps{
 			dir('C:\\')
 			{

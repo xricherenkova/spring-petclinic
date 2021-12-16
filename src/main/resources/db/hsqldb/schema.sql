@@ -11,7 +11,7 @@ CREATE TABLE vets (
   id         INTEGER IDENTITY PRIMARY KEY,
   first_name VARCHAR(30),
   last_name  VARCHAR(30),
-  age INTEGER(4)
+  age INT(3)
 );
 CREATE INDEX vets_last_name ON vets (last_name);
 

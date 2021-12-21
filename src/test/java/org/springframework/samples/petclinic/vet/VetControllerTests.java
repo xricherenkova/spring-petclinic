@@ -61,7 +61,7 @@ class VetControllerTests {
 		helen = new Vet();
 		helen.setFirstName("Helen");
 		helen.setLastName("Leary");
-		helen.setAge(22);
+		helen.setAge(22); //add age
 		helen.setId(2);
 		Specialty radiology = new Specialty();
 		radiology.setId(1);
